@@ -1,0 +1,38 @@
+.SideNav{
+    padding: 15px 0px 15px 15px;
+    width: 20%;
+
+  
+}
+.Side-component{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+.Side-component h4{
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.Side-component .Avatar{
+    height: 30px;
+    width: 30px;
+}
+
+.Side-component :hover{
+    transform: scale(1.07);
+}
+.SideIcon{
+    color: rgb(24,119,242);
+}
+
+
+@media (max-width : 991px){
+    .SideNav{
+        display: none;
+    }
+}

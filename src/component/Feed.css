@@ -1,0 +1,153 @@
+@keyframes Feed{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.Feed{
+    width: 80%;
+    background-color: white;
+    margin: 20px  auto 20px auto; 
+    border-radius: 10px;
+    padding: 0px 0px 10px 0px;
+    color: black;
+    box-shadow: 1px 1px 3px gray;
+    animation: Feed .4s;
+}
+
+.feedProfile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: auto;
+    padding: 10px;
+}
+
+.feedProfile .MuiAvatar-img{
+    display: flex;
+}
+.feedProfile h4{
+    display: flex;
+    font-weight: bolder !important;
+    margin-left: 10px;
+}
+
+.Feed h5{
+
+    margin: 10px 20px;
+    color: black;
+}
+.Feed img{
+    width: 100%;
+}
+
+.feedDetails{
+    margin: 10px auto;
+    width: 96%;
+    line-height: 30px;
+    border-bottom: .5px solid gray;
+}
+.feedDetails .comments{
+    float: right;
+}
+.feedOptions{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+}
+.fOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.fOption :hover{
+    transform: scale(1.07);
+}
+
+.fOption h3{
+    margin: 0px 10px;
+}
+
+.fOption .MuiAvatar-root{
+    height: 24px;
+    width: 24px;
+}
+
+
+.addComment{
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+}
+.addComment .MuiAvatar-root{
+    height: 30px;
+    width: 30px;
+}
+.commentForm{
+    background-color: rgb(240,242,245);
+    display: flex;
+    flex: 1;
+    width: 90%;
+    max-width: 92%;
+    margin: 0px auto;
+    align-items: center;
+    border-radius: 99px;
+}
+.commentForm input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    display: flex;
+    flex:1;
+}
+.commentForm .MuiSvgIcon-root{
+   margin: 0px 10px;
+   float: right;
+}
+
+
+.commentSection{
+    width: 90%;
+    margin: 0px auto;
+}
+.commentSection p{
+    width: 90%;
+    padding: 10px 10px;
+    display: flex;
+    background-color:rgb(240,242,245);
+    margin-left: 30px;
+    margin-top: 0px;
+    border-radius: 99px;
+    
+}
+.commentProfile{
+    display: flex;
+    align-items: center;
+}
+
+.commentProfile .MuiAvatar-root{
+    height: 30px;
+    width: 30px;
+}
+.commentProfile h4{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .Feed{
+        width: 94%;
+        margin: 20px auto;
+    }
+}

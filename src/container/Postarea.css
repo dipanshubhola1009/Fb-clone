@@ -1,0 +1,108 @@
+.Postarea {
+
+width: 60%;
+overflow-y: scroll;
+scroll-behavior: smooth;
+height: 100vh;
+}
+.editPost{
+    width: 80%;
+    margin: 30px 10%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px  rgba(194, 193, 193, 0.582);
+}
+
+.PostHead {
+ display: flex;
+ align-items: center;
+ padding: 10px 10px;
+ border-bottom: 1px solid gainsboro;
+}
+.PostHead form{
+    display: flex;
+    flex: 1;
+}
+
+
+.postInput{
+    display: flex;
+    background-color: rgb(240,242,245,.5);
+    margin-left: 10px; 
+   border-radius: 99px;
+}
+.flex-1{
+    flex:1;
+}
+.postInput input{
+   width: 100%;
+   outline: none;
+   background-color: transparent;
+   border: none;
+   height: 40px;
+   padding: 0px 10px;
+   color: black;
+}
+
+.hPost{
+    display: none;
+}
+
+.postOptions{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.pOption{
+    display: flex;
+    align-items: center;
+    padding: 15px auto;
+    cursor: pointer;
+}
+
+.pOption h4{
+    margin-left: 5px;
+}
+.pOption :hover{
+    transform: scale(1.07);
+}
+
+
+
+
+@media (max-width:991px){
+    .Postarea{
+        width: 98%;
+        margin: 50px auto;
+    }
+    .editPost{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .postOptions{
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .pOption{
+        display: grid;
+        padding: 20px 0px;
+        align-items: center;
+        justify-items: center;
+    }
+    .PostHead form{
+        display: grid;
+    }
+    .postInput{
+        margin: 2px 10px;
+    }
+    .hPost{
+        display: block;
+        background-color: rgb(24,119,242) ;
+        border-radius: 99px;
+        color: whitesmoke;
+        border: none;
+        width: 90%;
+        line-height: 30px;
+        margin: 20px auto;
+    }
+}

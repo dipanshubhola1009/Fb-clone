@@ -1,0 +1,41 @@
+.login{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(231,243,255);
+}
+.login h1{
+   
+    font-size: 72px;
+    color: rgb(63,81,181);
+  
+}
+
+.login .MuiAvatar-root{
+    height: 300px;
+    width: 300px;
+}
+
+.login button{
+    height: 50px;
+    width: 300px;
+    margin: 10px 0px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color:rgb(63,81,181);
+    color: rgb(255,255,255);
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+}
+
+@media (max-width:991px){
+    .login{
+        height: 100%;
+        padding: 10vh 0px;
+    }
+}

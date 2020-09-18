@@ -1,0 +1,113 @@
+.header{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow:  1px 1px 3px rgba(128, 128, 128, 0.267);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.header-left{
+    display: flex;
+    justify-items: space-around;
+    width: 25%;
+    
+}
+.header-left > img{
+    height: 40px;
+}
+
+.header-left .Search {
+    display: flex;
+    padding: 10px;
+    align-content: center;
+    background-color:rgb(240,242,245);
+    border-radius: 99px;
+    margin-left: 10px;
+  
+}
+
+.Search > input{
+ 
+    background-color: transparent;
+    border:none;
+    outline-style: none;
+    height: 20px;
+}
+
+.header-mid {
+    display: flex;
+    width: 50%;
+    padding: 0px 30px;
+    direction: column;
+    align-self: center;
+    justify-content: space-between;  
+}
+.header-option{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    cursor: pointer;
+}
+.header-option :hover{
+    transform: scale(1.07);
+}
+.header-option .MuiSvgIcon-root{
+   padding: 0px 0px 3px 0px;
+}
+
+.header-active{
+    border-bottom: 2px solid rgb(24,118,242);
+    color:rgb(24,118,242)
+}
+
+
+.header-right{
+    display: flex;
+    padding: 0px 30px;
+    width: 25%;
+   align-items: center; 
+    justify-content: space-evenly;
+}
+.right-option{
+  color: grey;
+  cursor: pointer;
+}
+.right-option :hover{
+    transform: scale(1.07);
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.profile h3{
+    margin-left: 10px;
+    color:#666;
+}
+
+
+@media (max-width : 991px) {
+    .header-mid{
+        display: none;
+    }
+    .header-left {
+        width: 80%;
+        margin: 3px auto;
+        display: flex;
+    }
+    .header-left .Search{
+        flex:1;
+    }
+    .header-right{
+        max-width: 80%;
+        display: flex;
+        width: 80%;
+        margin: 3px auto;
+    }
+    .header{
+        display: grid;
+    }
+}
